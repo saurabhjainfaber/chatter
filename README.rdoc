@@ -1,0 +1,36 @@
+= TeamPage
+
+This project rocks and uses MIT-LICENSE.
+
+A simple Rails 3 engine gem that adds a chat functionality to any Rails 3 application. 
+Send chat messages to online users within your application like any gmail/facebook chat.
+It assumes that you are using devise gem and user model as devise model for login.       
+
+Steps:
+
+1) Use rails g devise:install
+
+2) Use rake db:create
+ 
+3) Use rails g devise user
+
+4) Use rails g chatter:install
+
+5) Use rake db:migrate   
+
+6) Add following to your application controller:
+	def after_sign_out_path_for(resource)
+	     @user = User.find(:first, :conditions => ["email= '#{current_user.email}'"])
+	    @user.update_attribute(:status, "offline")
+	    return root_url
+    end   
+
+7) Edit devise.rb file according to your need.
+
+8) Run rails s
+
+9) Login with one user and the other
+
+10) Hit url: http://localhost:3000/chats/samplea
+
+10)Start chat
