@@ -1,0 +1,151 @@
+// Place all the styles related to the chats controller here.
+// They will automatically be included in application.css.
+// You can use Less here: http://lesscss.org/
+.chatboxmessagefrom {
+    margin-left:-1em;
+    font-weight: bold;
+}
+.chatboxhead {
+    background-color: #f99d39;
+    padding:7px;
+    color: #ffffff;
+    border-right:1px solid #f99d39;
+    border-left:1px solid #f99d39;
+}
+.chatboxmessage {
+    margin-left:1em;
+}
+.chatboxinput {
+    padding: 5px;
+    background-color: #ffffff;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+.chatboxblink {
+    background-color: #176689;
+    border-right:1px solid #176689;
+    border-left:1px solid #176689;
+}
+.chatbox {
+    position: fixed;
+    position:expression("absolute");
+    width: 225px;
+    display:none;
+}
+.chatboxoptions {
+    float: right;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight:bold;
+        font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    }
+}
+.chatboxtitle {
+    float: left;
+}
+.chatboxtextareaselected {
+    border: 2px solid #f99d39;
+    margin:0;
+}
+.chatboxtextarea {
+    width: 206px;
+    height:44px;
+    padding:3px 0pt 3px 3px;
+    border: 1px solid #eeeeee;
+    margin: 1px;
+    overflow:hidden;
+}
+.chatboxcontent {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    color: #333333;
+    height:200px;
+    width:209px;
+    overflow-y:auto;
+    overflow-x:auto;
+    padding:7px;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #eeeeee;
+    background-color: #ffffff;
+    line-height: 1.3em;
+}
+.chatboxinfo {
+    margin-left:-1em;
+    color:#666666;
+}
+
+.ie .uiScrollableAreaContent{
+	display:block;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:180px;
+    top:310px;
+    background:#eee;
+    border:1px solid #ddd;
+
+}
+
+
+.gecko .uiScrollableAreaContent{
+	display:block;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:180px;
+    top:310px;
+    background:#eee;
+    border:1px solid #ddd;
+
+}
+
+.chrome .uiScrollableAreaContent{
+	display:block;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:180px;
+    top:370px;
+    background:#eee;
+    border:1px solid #ddd;
+
+}
+
+.ChatOrderedList{
+	padding-top:8px;
+
+}
+
+
+li.item{ list-style-type: none;}
+
+.item .pic{float:left;height:28px;margin-right:8px;width:28px;}
+
+.item .icons{float:right;height:28px;line-height:24px;margin-left:4px}
+
+ .item .status{display:inline-block;height:10px;width:7px}
+ 
+ .item .icon{margin-right:4px;vertical-align:middle}
+ 
+.ChatOrderedList .item, .ChatOrderedList .separator{float:left;width:100%}
+.ChatOrderedList .item a{color:#333;display:block;padding:2px 8px 2px 10px;position:relative}
+.ChatOrderedList .item a:hover, .ChatOrderedList .item a.selected{background-color:#e0e4ee;text-decoration:none}
+
+ul.ChatOrderedList{
+	margin:0pt;
+	padding:0pt;
+	list-style-type:none;
+
+}
+
+.ChatOrderedList .item .name{
+line-height:28px;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}
+
+

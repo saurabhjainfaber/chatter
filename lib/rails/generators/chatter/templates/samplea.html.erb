@@ -1,0 +1,24 @@
+
+<% if user_signed_in? and @onlineusers[0] != nil %>
+
+<div class="uiScrollableAreaContent">
+	<ul class="ChatOrderedList timelineIcons">
+	
+		
+		<% @onlineusers.each do |user| %>
+		<li class= "item">
+			<a rel= "ignore" tabindex="0" "javascript:void(0)" onclick="javascript:chatWith('<%= user.username %>')"> 
+				<%= image_tag("ol_chatter_image.png", :class => "pic", :alt => "") %>
+			<div class="icons">
+				<%= image_tag("ol_chatter_status.png", :class => "status icon img", :alt => "") %>
+			</div>
+			<div class="name">
+				<%= user.first_name %>  <%= user.last_name %>
+			</div> </a>
+		</li>
+		<% end %>
+	  </ul>
+</div>
+
+<% end %>
+	

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform                  = Gem::Platform::RUBY
   s.authors                   = [ "Saurabh Jain" ]
   s.email                     = [ "123saurabhjain@gmail.com" ]
-  s.homepage                  = "https://github.com/saurabhjainfaber/ruby-jquery-chat"
+  s.homepage                  = "https://github.com/saurabhjainfaber/chatter"
   s.description               = "Adds a chat functionality to any Rails 3 application. Send chat messages to online users within your application like any gmail/facebook chat. It assumes that you are using devise gem and user model as devise model for login."
   s.summary                   = "chatter-#{s.version}"
 
