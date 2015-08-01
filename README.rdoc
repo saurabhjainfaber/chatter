@@ -19,10 +19,11 @@ Steps:
 5) Use rake db:migrate   
 
 6) Add following to your application controller:
-	def after_sign_out_path_for(resource)
-	     @user = User.find(:first, :conditions => ["email= '#{current_user.email}'"])
-	    @user.update_attribute(:status, "offline")
-	    return root_url
+
+    def after_sign_out_path_for(resource)
+        @user = User.find(:first, :conditions => ["email= '#{current_user.email}'"])
+        @user.update_attribute(:status, "offline")
+        return root_url
     end   
 
 7) Edit devise.rb file according to your need.
