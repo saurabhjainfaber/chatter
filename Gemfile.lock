@@ -57,7 +57,7 @@ GEM
     multi_json (1.3.6)
     orm_adapter (0.0.7)
     polyglot (0.3.3)
-    rack (1.4.1)
+    rack (1.4.7)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-ssl (1.3.2)
@@ -94,9 +94,11 @@ GEM
     tzinfo (0.3.33)
     warden (1.1.1)
       rack (>= 1.0)
+    yard (0.9.20)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   chatter!
+  yard
